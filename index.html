@@ -35,6 +35,22 @@
             }
             document.querySelector(".time").innerHTML = year + month + day + " " + h + m + s;
         }
+
+        function copy(e) {
+            let transfer = document.createElement('input');
+            document.body.appendChild(transfer);
+            transfer.value = "XieXiLin#6565";
+            transfer.focus();
+            transfer.select();
+            if (document.execCommand('copy')) {
+                document.execCommand('copy');
+            }
+            transfer.blur();
+            console.log('复制成功');
+            document.body.removeChild(transfer);
+
+        }
+        $('#copyBtn').addEventListener('click', copy)
     </script>
     <style type="text/css">
         @charset "UTF-8";
@@ -152,6 +168,11 @@
                         <i class="fa-brands fa-github"></i>
                     </a>
                     |
+                    <a href="https://discordapp.com/users/713583903155421255/"
+                        style="color: black; text-decoration: none;">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    |
                     <a href="https://t.me/XieXiLin" style="color: black; text-decoration: none;">
                         <i class="fa-brands fa-telegram"></i>
                     </a>
@@ -163,8 +184,6 @@
                     <a href="https://www.twitch.tv/xiexilin" style="color: black; text-decoration: none;">
                         <i class="fa-brands fa-twitch"></i>
                     </a>
-                    |
-                    <i class="fa-brands fa-discord"></i> (XieXiLin#6565)
                 </div>
             </div>
             <br />
