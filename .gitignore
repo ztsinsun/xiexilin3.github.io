@@ -1,0 +1,8 @@
+# Error Pages
+error/*
+
+# Htaccess Files
+*.htaccess
+
+# Hintrc
+.hintrc
