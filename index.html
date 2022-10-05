@@ -251,6 +251,36 @@
             </div>
             <br />
             <div class="mdui-card">
+                <div class="CardTitle">
+                    <i class="mdui-icon material-icons mdui-text-color-purple">&#xe8a1;</i> 赞助
+                </div>
+                <div class="CardBody">
+                    <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#donate'}">打开赞助页</button>
+                    <div class="mdui-dialog" id="donate">
+                        <div class="mdui-tab mdui-tab-full-width" id="example4-tab">
+                            <a href="#wechat" class="mdui-ripple">微信</a>
+                            <a href="#alipay" class="mdui-ripple">支付宝</a>
+                        </div>
+                        <div id="wechat" class="mdui-p-a-2">
+                            <img src="/images/donate-wechat.png" style="height: auto; width: auto; width:100%;" />
+                        </div>
+                        <div id="alipay" class="mdui-p-a-2">
+                            <a href="https://qr.alipay.com/fkx17532hdldivxs4wvmib2">
+                                <img src="/images/donate-alipay.jpg" style="height: auto; width: auto; width:100%;" />
+                            </a>
+                        </div>
+                    </div>
+                      
+                    <script>
+                        var tab = new mdui.Tab('#example4-tab');
+                        document.getElementById('donate').addEventListener('open.mdui.dialog', function () {
+                            tab.handleUpdate();
+                        });
+                    </script>
+                </div>
+            </div>
+            <br />
+            <div class="mdui-card">
                 <div class="mdui-card-content mdui-text-center" style="font-size: 15px;">
                     Copyright &copy; 2022 <a href="https://www.xiexilin.top/" target="_blank" rel="noopener"
                         class="Link">XieXiLin</a> Rights Reserved.
