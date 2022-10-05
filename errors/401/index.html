@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.xiexilin.top/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.xiexilin.top/favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="https://www.xiexilin.top/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+    <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+    <link rel="stylesheet" href="https://www.xiexilin.top/moe/style.css" />
+    <title>XieXiLin's Home</title>
+    <script>
+        setInterval(time, 1)
+        function time() {
+            let time = new Date();
+            let year = time.getFullYear() + "年";
+            let month = time.getMonth() + 1 + "月";
+            let day = time.getDate() + "日";
+            let h = time.getHours() + ':';
+            let m = time.getMinutes() + ":";
+            let s = time.getSeconds();
+            if (s < 10) {
+                s = "0" + s;
+            }
+            if (time.getMinutes() < 10) {
+                m = "0" + m;
+            }
+            if (time.getHours() < 10) {
+                h = "0" + h;
+            }
+            document.querySelector(".time").innerHTML = year + month + day + " " + h + m + s;
+        }
+    </script>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: tx;
+            src: url("https://www.xiexilin.top/fonts/tx.woff2") format("woff2");
+        }
+
+        .title {
+            width: auto;
+            text-align: center;
+            text-shadow: 0 0 10px #ff9900c4;
+        }
+
+        body {
+            font-family: 'tx';
+            background-color: #e3e3e3;
+            background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) 100%), url('//api.imlazy.ink/img');
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 100% !important;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            letter-spacing: 1px;
+            line-height: auto;
+        }
+
+        .mdui-card {
+            background: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .CardTitle {
+            padding: 16px;
+            font-size: 2vh;
+            margin: 0;
+            line-height: 1;
+            font-weight: bold;
+        }
+
+        .CardBody {
+            padding: 0px 12px 10px 12px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class=".mdui-shadow-20">
+            <a href="https://www.xiexilin.top/" style="color: black; text-decoration: none;">
+                <h1>
+                    XieXiLin's Home
+                </h1>
+            </a>
+        </div>
+    </div>
+    <div class="mdui-container">
+        <div class="mdui-row" style="margin: auto;top: 0;left: 0;right: 0;bottom: 0; width: 1000px;">
+            <div class="mdui-card">
+                <div class="CardTitle">
+                    <i class="mdui-icon material-icons mdui-text-color-red">&#xe000;</i> 401 Unauthorized
+                </div>
+                <div class="CardBody">
+                    未经验证的请求。
+                </div>
+            </div>
+            <br />
+            <div class="mdui-card">
+                <div class="CardTitle">
+                    <i class="mdui-icon material-icons mdui-text-color-green">&#xe334;</i> 现在时间
+                </div>
+                <div class="CardBody time"></div>
+            </div>
+            <br />
+            <div class="mdui-card">
+                <div class="mdui-card-content mdui-text-center" style="font-size: 15px;">
+                    Copyright &copy; 2022 <a href="https://www.xiexilin.top/" target="_blank" rel="noopener"
+                        style="color: black; text-decoration: none;">XieXiLin</a> Rights Reserved.
+                    <!-- <br />
+                        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" style="color: black; text-decoration: none;">某ICP备XXXXXXXXXX号</a> -->
+                    <a href="https://icp.gov.moe/?keyword=20220031" target="_blank"
+                        style="color: #f400a1; text-decoration: none;"><span class="icon-MOE"></span>萌ICP备20220031号</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
