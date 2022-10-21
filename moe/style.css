@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://www.xiexilin.top/moe/fonts/icomoon.eot?n169zo');
-  src:  url('https://www.xiexilin.top/moe/fonts/icomoon.eot?n169zo#iefix') format('embedded-opentype'),
-    url('https://www.xiexilin.top/moe/fonts/icomoon.ttf?n169zo') format('truetype'),
-    url('https://www.xiexilin.top/moe/fonts/icomoon.woff?n169zo') format('woff'),
-    url('https://www.xiexilin.top/moe/fonts/icomoon.svg?n169zo#icomoon') format('svg');
+  src:  url('../moe/fonts/icomoon.eot?n169zo');
+  src:  url('../moe/fonts/icomoon.eot?n169zo#iefix') format('embedded-opentype'),
+    url('../moe/fonts/icomoon.ttf?n169zo') format('truetype'),
+    url('../moe/fonts/icomoon.woff?n169zo') format('woff'),
+    url('../moe/fonts/icomoon.svg?n169zo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
